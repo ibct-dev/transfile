@@ -1,0 +1,50 @@
+[0minfo  2023-11-28T07:08:48.318 net-1     net_plugin.cpp:1379           set_state            ] old state lib catchup becoming in sync[0m
+[0minfo  2023-11-28T07:08:48.318 net-1     net_plugin.cpp:1070           operator()           ] Sending handshake generation 2 to ip-10-100-1-217:9876 - f437ed8, lib 3, head 4, id 779052dff2810806[0m
+[0minfo  2023-11-28T07:08:48.318 net-0     net_plugin.cpp:1725           sync_recv_notice     ] notice_message, pending 6, blk_num 6, id 75b1045ef3ca1c26...[0m
+[0minfo  2023-11-28T07:08:48.318 net-0     net_plugin.cpp:1686           verify_catchup       ] catch_up while in in sync, fork head num = 6 target LIB = 4 next_expected = 5, id 75b1045ef3ca1c26..., peer ip-10-100-1-217:9876 - f437ed8[0m
+[0minfo  2023-11-28T07:08:48.318 net-0     net_plugin.cpp:1379           set_state            ] old state in sync becoming head catchup[0m
+[0minfo  2023-11-28T07:08:48.319 nodeos    producer_plugin.cpp:404       on_incoming_block    ] Received block 9d6921db810c124c... #5 @ 2023-11-28T07:08:47.500 signed by led [trxs: 0, lib: 4, conf: 0, latency: 819 ms][0m
+[0minfo  2023-11-28T07:08:48.320 nodeos    producer_plugin.cpp:404       on_incoming_block    ] Received block 75b1045ef3ca1c26... #6 @ 2023-11-28T07:08:48.000 signed by led [trxs: 0, lib: 5, conf: 0, latency: 320 ms][0m
+[0minfo  2023-11-28T07:08:48.320 net-0     net_plugin.cpp:1379           set_state            ] old state head catchup becoming in sync[0m
+[0minfo  2023-11-28T07:08:48.320 net-0     net_plugin.cpp:1070           operator()           ] Sending handshake generation 3 to ip-10-100-1-217:9876 - f437ed8, lib 5, head 6, id 75b1045ef3ca1c26[0m
+[0minfo  2023-11-28T07:08:48.401 nodeos    producer_plugin.cpp:404       on_incoming_block    ] Received block 0cc07455fd7e6547... #7 @ 2023-11-28T07:08:48.500 signed by led [trxs: 0, lib: 6, conf: 0, latency: -98 ms][0m
+[0minfo  2023-11-28T07:08:48.901 nodeos    producer_plugin.cpp:404       on_incoming_block    ] Received block 44f7e7763829a16a... #8 @ 2023-11-28T07:08:49.000 signed by led [trxs: 0, lib: 7, conf: 0, latency: -98 ms][0m
+[0minfo  2023-11-28T07:08:49.401 nodeos    producer_plugin.cpp:404       on_incoming_block    ] Received block 0b7b763486bce410... #9 @ 2023-11-28T07:08:49.500 signed by led [trxs: 0, lib: 8, conf: 0, latency: -98 ms][0m
+[0minfo  2023-11-28T07:08:49.901 nodeos    producer_plugin.cpp:404       on_incoming_block    ] Received block f6eabd4febec012e... #10 @ 2023-11-28T07:08:50.000 signed by led [trxs: 0, lib: 9, conf: 0, latency: -98 ms][0m
+[0minfo  2023-11-28T07:08:50.401 nodeos    producer_plugin.cpp:404       on_incoming_block    ] Received block c62fe5893d6a4e84... #11 @ 2023-11-28T07:08:50.500 signed by led [trxs: 0, lib: 10, conf: 0, latency: -98 ms][0m
+[0minfo  2023-11-28T07:08:50.517 nodeos    txn_test_gen_plugin.cp:131    create_test_accounts ] create_test_accounts[0m
+Value of fn: /home/dev001/LEDGIS/build/unittests/contracts/led.token/led.token.abi
+Value of fn: /home/dev001/LEDGIS/build/unittests/contracts/led.token/led.token.abi
+Value of fn: /home/dev001/LEDGIS/build/unittests/contracts/led.token/led.token.wasm
+Value of fn: /home/dev001/LEDGIS/build/unittests/contracts/led.token/led.token.abi
+[31merror 2023-11-28T07:08:50.526 nodeos    http_plugin.cpp:932           handle_exception     ] FC Exception encountered while processing txn_test_gen.create_test_accounts[0m
+[0minfo  2023-11-28T07:08:50.902 nodeos    producer_plugin.cpp:404       on_incoming_block    ] Received block 499814124f025f42... #12 @ 2023-11-28T07:08:51.000 signed by led [trxs: 1, lib: 11, conf: 0, latency: -97 ms][0m
+[0minfo  2023-11-28T07:08:51.401 nodeos    producer_plugin.cpp:404       on_incoming_block    ] Received block db2e6066f36a5a36... #13 @ 2023-11-28T07:08:51.500 signed by led [trxs: 0, lib: 12, conf: 0, latency: -98 ms][0m
+[0minfo  2023-11-28T07:08:51.901 nodeos    producer_plugin.cpp:404       on_incoming_block    ] Received block 39ec5c3edecae17a... #14 @ 2023-11-28T07:08:52.000 signed by led [trxs: 0, lib: 13, conf: 0, latency: -98 ms][0m
+[0minfo  2023-11-28T07:08:52.401 nodeos    producer_plugin.cpp:404       on_incoming_block    ] Received block 8e1f454618a4d641... #15 @ 2023-11-28T07:08:52.500 signed by led [trxs: 0, lib: 14, conf: 0, latency: -98 ms][0m
+[0minfo  2023-11-28T07:08:52.903 nodeos    producer_plugin.cpp:404       on_incoming_block    ] Received block 4c1f584742279d79... #16 @ 2023-11-28T07:08:53.000 signed by led [trxs: 0, lib: 15, conf: 0, latency: -96 ms][0m
+[0minfo  2023-11-28T07:08:52.979 nodeos    txn_test_gen_plugin.cp:266    start_generation     ] Starting transaction test plugin[0m
+[0minfo  2023-11-28T07:08:52.979 nodeos    txn_test_gen_plugin.cp:275    start_generation     ] Starting transaction test plugin valid[0m
+Value of fn: /home/dev001/LEDGIS/build/unittests/contracts/led.token/led.token.abi
+[0minfo  2023-11-28T07:08:52.982 nodeos    txn_test_gen_plugin.cp:307    start_generation     ] Started transaction test plugin; generating 40 transactions every 20 ms by 2 load generation threads[0m
+[0minfo  2023-11-28T07:08:53.418 nodeos    producer_plugin.cpp:404       on_incoming_block    ] Received block 34c9a91d9db58aeb... #17 @ 2023-11-28T07:08:53.500 signed by led [trxs: 583, lib: 16, conf: 0, latency: -81 ms][0m
+[0minfo  2023-11-28T07:08:53.946 nodeos    producer_plugin.cpp:404       on_incoming_block    ] Received block 4fbfc7040e78ec42... #18 @ 2023-11-28T07:08:54.000 signed by led [trxs: 767, lib: 17, conf: 0, latency: -53 ms][0m
+[0minfo  2023-11-28T07:08:54.590 nodeos    producer_plugin.cpp:404       on_incoming_block    ] Received block 025aa5492404014d... #19 @ 2023-11-28T07:08:54.500 signed by led [trxs: 968, lib: 18, conf: 0, latency: 90 ms][0m
+[0minfo  2023-11-28T07:08:55.131 nodeos    producer_plugin.cpp:404       on_incoming_block    ] Received block 1f78319f6483bef6... #20 @ 2023-11-28T07:08:55.000 signed by led [trxs: 721, lib: 19, conf: 0, latency: 131 ms][0m
+[0minfo  2023-11-28T07:08:55.637 nodeos    producer_plugin.cpp:404       on_incoming_block    ] Received block dc9dd2600c4a638e... #21 @ 2023-11-28T07:08:55.500 signed by led [trxs: 669, lib: 20, conf: 0, latency: 137 ms][0m
+[0minfo  2023-11-28T07:08:56.160 nodeos    producer_plugin.cpp:404       on_incoming_block    ] Received block 6df35845a3102a36... #22 @ 2023-11-28T07:08:56.000 signed by led [trxs: 949, lib: 21, conf: 0, latency: 160 ms][0m
+[0minfo  2023-11-28T07:08:56.526 nodeos    producer_plugin.cpp:404       on_incoming_block    ] Received block 5575088dce395914... #23 @ 2023-11-28T07:08:56.500 signed by led [trxs: 357, lib: 22, conf: 0, latency: 26 ms][0m
+[0minfo  2023-11-28T07:08:57.097 nodeos    producer_plugin.cpp:404       on_incoming_block    ] Received block 1a2c91685de3f43c... #24 @ 2023-11-28T07:08:57.000 signed by led [trxs: 877, lib: 23, conf: 0, latency: 97 ms][0m
+[0minfo  2023-11-28T07:08:57.538 nodeos    producer_plugin.cpp:404       on_incoming_block    ] Received block 30fb81ded3d4a1c8... #25 @ 2023-11-28T07:08:57.500 signed by led [trxs: 1140, lib: 24, conf: 0, latency: 38 ms][0m
+[0minfo  2023-11-28T07:08:58.263 nodeos    producer_plugin.cpp:404       on_incoming_block    ] Received block 50b95634e1e8ac4c... #26 @ 2023-11-28T07:08:58.000 signed by led [trxs: 896, lib: 25, conf: 0, latency: 263 ms][0m
+[0minfo  2023-11-28T07:08:58.520 nodeos    producer_plugin.cpp:404       on_incoming_block    ] Received block 11a238f9b9828f9e... #27 @ 2023-11-28T07:08:58.500 signed by led [trxs: 465, lib: 26, conf: 0, latency: 20 ms][0m
+[0minfo  2023-11-28T07:08:59.234 nodeos    producer_plugin.cpp:404       on_incoming_block    ] Received block 449613649a3e5343... #28 @ 2023-11-28T07:08:59.000 signed by led [trxs: 1023, lib: 27, conf: 0, latency: 234 ms][0m
+[0minfo  2023-11-28T07:08:59.401 nodeos    producer_plugin.cpp:404       on_incoming_block    ] Received block fd3d5b948477cd17... #29 @ 2023-11-28T07:08:59.500 signed by led [trxs: 376, lib: 28, conf: 0, latency: -98 ms][0m
+[0minfo  2023-11-28T07:08:59.976 nodeos    producer_plugin.cpp:404       on_incoming_block    ] Received block e81b0a9d23244ad0... #30 @ 2023-11-28T07:09:00.000 signed by led [trxs: 769, lib: 29, conf: 0, latency: -23 ms][0m
+[0minfo  2023-11-28T07:09:00.635 nodeos    producer_plugin.cpp:404       on_incoming_block    ] Received block ce669acf9c8f9556... #31 @ 2023-11-28T07:09:00.500 signed by led [trxs: 726, lib: 30, conf: 0, latency: 135 ms][0m
+[0minfo  2023-11-28T07:09:01.050 nodeos    producer_plugin.cpp:404       on_incoming_block    ] Received block 7ab34397381aeca4... #32 @ 2023-11-28T07:09:01.000 signed by led [trxs: 544, lib: 31, conf: 0, latency: 50 ms][0m
+[0minfo  2023-11-28T07:09:01.617 nodeos    producer_plugin.cpp:404       on_incoming_block    ] Received block 1683a229e3c7f92d... #33 @ 2023-11-28T07:09:01.500 signed by led [trxs: 489, lib: 32, conf: 0, latency: 117 ms][0m
+[0minfo  2023-11-28T07:09:02.230 nodeos    producer_plugin.cpp:404       on_incoming_block    ] Received block e4e1950564a4d6f5... #34 @ 2023-11-28T07:09:02.000 signed by led [trxs: 705, lib: 33, conf: 0, latency: 230 ms][0m
+[0minfo  2023-11-28T07:09:02.602 nodeos    producer_plugin.cpp:404       on_incoming_block    ] Received block 94c17104bb46968b... #35 @ 2023-11-28T07:09:02.500 signed by led [trxs: 646, lib: 34, conf: 0, latency: 102 ms][0m
+[0minfo  2023-11-28T07:09:03.060 nodeos    producer_plugin.cpp:404       on_incoming_block    ] Received block 4167aab3800dc603... #36 @ 2023-11-28T07:09:03.000 signed by led [trxs: 527, lib: 35, conf: 0, latency: 60 ms][0m
+[0minfo  2023-11-28T07:09:03.783 nodeos    producer_plugin.cpp:404       on_incoming_block    ] Received block 96b108e4c0b5f161... #37 @ 2023-11-28T07:09:03.500 signed by led [trxs: 847, lib: 36, conf: 0, latency: 283 ms][0m
