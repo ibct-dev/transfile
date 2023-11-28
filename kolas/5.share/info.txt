@@ -1,0 +1,32 @@
+<기본 정보>
+1. 공유 제공자
+    "did": "did:lit:3Z85RMnLCgLx9ApNctnhac",
+    "hubDid": "did:lit:QnKdAKKAkgiGhvtpECWfa9",
+    "privateKey": "LJGXQzC8ehE1TRECnUhqMtWeVLCUAFnWp4S5Ltocjy9",
+    "publicKey": "h7BQGUgvSg5BhRB4AwgxNn7vzTDXp2JA3srZtHJdAwLE",
+
+2. 공유 수신자
+    "privateKey": "Bh4H2vBL3qgzK9YSgkp1bRgGHFxhm61pxTudsHttqh1f",
+    "publicKey": "tQVsn2dh6TH9qeX5u2TKvmRAQNpQpsNMecVqNubAaQyh",
+
+3. 공유 Data
+    "payload": {
+        "name" : "이몽룡",
+        "testdata" : "This is kolas test"
+    }
+
+4. 공유후
+    "commitId": "3cce4865f0c586cd9e0179a253bf82a397df109c8197f42b135b5e2758d3dddc",
+    "objectId": "did:lit:af7f30b0-0d37-4e16-9a64-88583b8cd5e1"
+
+<TEST정보>
+1.허브인스턴스생성
+- 공유 제공자가 1회 생성
+
+2.공유정보저장
+- 공유 제공자가 공유Data를 공유하기 위한 호출
+- 수행시간 점검/확인
+
+3.공유정보조회
+- 공유 수신자가 공유Data를 확인하는 호출
+- 정상 공유되었는지 확인

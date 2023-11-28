@@ -1,0 +1,30 @@
+{
+	"name": "2.VC 검증",
+	"request": {
+		"method": "POST",
+		"header": [],
+		"body": {
+			"mode": "raw",
+			"raw": "{\n    \"@context\": [\n        \"https://www.w3.org/2018/credentials/v1\",\n        \"https://w3id.org/security/bbs/v1\",\n        \"https://dev-credentials.identitydatahub.com/Credentials7.jsonld\"\n    ],\n    \"id\": \"https://issuer.credential.go.kr/credentials/83627465\",\n    \"type\": [\n        \"VerifiableCredential\",\n        \"NMIDCredential\"\n    ],\n    \"issuer\": \"did:lit:DuaNdgbgMouK8crknDWKeY\",\n    \"issuanceDate\": \"2023-11-03T09:21:06.097Z\",\n    \"credentialSubject\": {\n        \"type\": \"NMIDCard\",\n        \"id\": \"did:lit:DuaNdgbgMouK8crknDWKeY\",\n        \"subjectDid\": \"did:lit:DuaNdgbgMouK8crknDWKeY\",\n        \"vcId\": \"xdfxdfewr\",\n        \"benggolName\": \"\",\n        \"name\": \"이병훈\",\n        \"fatherName\": \"이순신\",\n        \"motherName\": \"신사임당\",\n        \"birthDate\": \"1999-03-01\",\n        \"personImage\": \"\",\n        \"NMIDNo\": \"990301-1\"\n    },\n    \"proof\": {\n        \"type\": \"BbsBlsSignature2020\",\n        \"created\": \"2023-11-03T09:21:06Z\",\n        \"proofPurpose\": \"assertionMethod\",\n        \"proofValue\": \"oYtVqiRJFcsopElE73hvOySUImoOj/lGnGnvS2v6I/Fyp4Sl2LwMF0XngEVjaBpxUcIsti1r0hTOTXaXYrCqE+sKwmAmtc4kUBUn+SIaOhYi8j/MSeA+FUoFpJaIoghPhJng2mliGskga+lLnMV1JA==\",\n        \"verificationMethod\": \"did:lit:DuaNdgbgMouK8crknDWKeY#2\"\n    }\n}",
+			"options": {
+				"raw": {
+					"language": "json"
+				}
+			}
+		},
+		"url": {
+			"raw": "https://myselfdata-did.identitydatahub.com/credV2/verifyVcV2",
+			"protocol": "https",
+			"host": [
+				"myselfdata-did",
+				"identitydatahub",
+				"com"
+			],
+			"path": [
+				"credV2",
+				"verifyVcV2"
+			]
+		}
+	},
+	"response": []
+}

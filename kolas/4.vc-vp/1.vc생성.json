@@ -1,0 +1,30 @@
+{
+	"name": "1.VC생성",
+	"request": {
+		"method": "POST",
+		"header": [],
+		"body": {
+			"mode": "raw",
+			"raw": "{\n    \"keys\":{\n        \"id\": \"did:lit:3Z85RMnLCgLx9ApNctnhac#2\",\n        \"privateKeyBase58\": \"2zDjcwVcVAZW7B8TkW6tkFtappDoBUExU657SQ2TbNEW\"\n    },\n    \"credential\": {\n        \"type\": \"NMIDCard\",\n        \"id\":\"did:lit:3Z85RMnLCgLx9ApNctnhac\",\n        \"subjectDid\": \"did:lit:3Z85RMnLCgLx9ApNctnhac\",\n        \"vcId\": \"xdfxdfewr\",\n        \"benggolName\": \"변사또\",\n        \"name\": \"이몽룡\",\n        \"fatherName\": \"이순신\",\n        \"motherName\": \"신사임당\",\n        \"birthDate\": \"1999-03-01\",\n        \"personImage\":\"\",\n        \"NMIDNo\": \"990301-1\"\n    }\n}",
+			"options": {
+				"raw": {
+					"language": "json"
+				}
+			}
+		},
+		"url": {
+			"raw": "https://myselfdata-did.identitydatahub.com/credV2/issueVcV2",
+			"protocol": "https",
+			"host": [
+				"myselfdata-did",
+				"identitydatahub",
+				"com"
+			],
+			"path": [
+				"credV2",
+				"issueVcV2"
+			]
+		}
+	},
+	"response": []
+}

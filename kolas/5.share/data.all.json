@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "de0298c2-d42e-49ed-8bef-e65987e9f003",
+		"name": "DIDH#2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20807645"
+	},
+	"item": [
+		{
+			"name": "1.허브인스턴스 생성",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"clientDid\": \"did:lit:3Z85RMnLCgLx9ApNctnhac\",\n    \"hubDid\": \"did:lit:QnKdAKKAkgiGhvtpECWfa9\",\n    \"privateKey\": \"LJGXQzC8ehE1TRECnUhqMtWeVLCUAFnWp4S5Ltocjy9\",\n    \"keyReference\": \"did:lit:3Z85RMnLCgLx9ApNctnhac#0\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://myselfdata-did.identitydatahub.com/idh/registerHub",
+					"protocol": "https",
+					"host": [
+						"myselfdata-did",
+						"identitydatahub",
+						"com"
+					],
+					"path": [
+						"idh",
+						"registerHub"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2.공유정보 저장",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"did\": \"did:lit:3Z85RMnLCgLx9ApNctnhac\",\n    \"hubDid\": \"did:lit:QnKdAKKAkgiGhvtpECWfa9\",\n    \"privateKey\": \"LJGXQzC8ehE1TRECnUhqMtWeVLCUAFnWp4S5Ltocjy9\",\n    \"publicKey\": \"tQVsn2dh6TH9qeX5u2TKvmRAQNpQpsNMecVqNubAaQyh\",\n    \"comments\": \"kolas test 1\",\n    \"payload\": {\n        \"name\" : \"이몽룡\",\n        \"testdata\" : \"This is kolas test\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://myselfdata-did.identitydatahub.com/idhaccount/createPermissionCommit",
+					"protocol": "https",
+					"host": [
+						"myselfdata-did",
+						"identitydatahub",
+						"com"
+					],
+					"path": [
+						"idhaccount",
+						"createPermissionCommit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3.공유정보 조회",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"did\": \"did:lit:3Z85RMnLCgLx9ApNctnhac\",\n    \"hubDid\": \"did:lit:QnKdAKKAkgiGhvtpECWfa9\",\n    \"privateKey\": \"Bh4H2vBL3qgzK9YSgkp1bRgGHFxhm61pxTudsHttqh1f\",\n    \"publicKey\": \"h7BQGUgvSg5BhRB4AwgxNn7vzTDXp2JA3srZtHJdAwLE\",\n    \"commitId\": \"3cce4865f0c586cd9e0179a253bf82a397df109c8197f42b135b5e2758d3dddc\",\n    \"objectId\": \"did:lit:af7f30b0-0d37-4e16-9a64-88583b8cd5e1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://myselfdata-did.identitydatahub.com/idhaccount/queryPermissionCommit",
+					"protocol": "https",
+					"host": [
+						"myselfdata-did",
+						"identitydatahub",
+						"com"
+					],
+					"path": [
+						"idhaccount",
+						"queryPermissionCommit"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

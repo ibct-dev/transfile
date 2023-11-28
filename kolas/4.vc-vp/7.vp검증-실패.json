@@ -1,0 +1,30 @@
+{
+	"name": "7.VP검증-실패",
+	"request": {
+		"method": "POST",
+		"header": [],
+		"body": {
+			"mode": "raw",
+			"raw": "{\n    \"@context\": [\n        \"https://www.w3.org/2018/credentials/v1\",\n        \"https://dev-credentials.identitydatahub.com/Credentials7.jsonld\"\n    ],\n    \"type\": [\n        \"VerifiablePresentation\"\n    ],\n    \"verifiableCredential\": [\n        {\n            \"@context\": [\n                \"https://www.w3.org/2018/credentials/v1\",\n                \"https://w3id.org/security/bbs/v1\",\n                \"https://dev-credentials.identitydatahub.com/Credentials7.jsonld\"\n            ],\n            \"id\": \"https://issuer.credential.go.kr/credentials/83627465\",\n            \"type\": [\n                \"NMIDCredential\",\n                \"VerifiableCredential\"\n            ],\n            \"credentialSubject\": {\n                \"id\": \"did:lit:3Z85RMnLCgLx9ApNctnhac\",\n                \"type\": \"NMIDCard\",\n                \"name\": \"변학도\"\n            },\n            \"issuanceDate\": \"2023-11-06T03:51:29.852Z\",\n            \"issuer\": \"did:lit:3Z85RMnLCgLx9ApNctnhac\",\n            \"proof\": {\n                \"type\": \"BbsBlsSignatureProof2020\",\n                \"created\": \"2023-11-06T03:51:29Z\",\n                \"nonce\": \"HvwfeCn4zh//qkk5MMaztOEdgLUvp7xUFDeTltFTVmrpZUeY7h8J/1NcXrGn+/9ZSn0=\",\n                \"proofPurpose\": \"assertionMethod\",\n                \"proofValue\": \"ABMH4g+Ws/C+dB8+tywdqvOl7Lbx7J62FfKH4lDBtNPSTmBf8IY5pZ+r0frWT26s0RjWU2yOrO/0NLnS/RGn7M/Z5NEE0MkajBUEhD9kFcqOGR4gBszDw1uzJg4yuRFYhn8s4UuFdbJP5/MZSfi7NMNeGxiNBBjOQ2rZIZP0Ivtqbo44cVlJTMTt6Ls5LPUL2+hZo2wAAAB0qw9EHpb7Cg2UMkURRjOwFvCzH1t5U5vyPAtoFRWxQphiyfn7dOW4V4Syr3kzpjj8AAAAAitz8AP0l2ozhyWxXQH/9+CAGEABjb/6WqizHNGITTk6R4148S7r15K+A0BYQCMXsLFd7Wdhd53n+gXAsE/IzdiBnYLVHOXWvYEx4C78wnW7hoN6/Yp9x14MwPr9HM+tcjgIHg7fyUVx/qqoioTU7xsAAAAKH6oOT10B2NhIeck0QvTrf4qdbTqUJ14b+5EKVMoNR6giJIs/09tdZ7WZ/l174ecB28ExapuW4o2QkbxFeSsGmRCrCQSBp+ViGFfm766WUM5UnFEeNEBd4IYXZKoNHGQ+Ish14ZIVSBZlvkUZo+4ZY4UJW+CovDVyQAi9PdkikuBBteSrSI17L9AKfZ2S1Zm/wIh6Zwy5pIpqaeO2jDPDGSwVTc8ywuZM1bf849aIDWwIygM/FmdxOF7wuIc31tmoOBl9tt+gDvysw2GHvAtW908IINfaJUfbY4HBCujrudcnzUhgzXXXeKhrom1AsZpVfkkuW2GyJblLozzNE/jxiWsOYTvN7Jq/OY/dO/0WT8nxXklEXyaL8Adhk7W+ztX+DErpShDD7MwO4Exb/BIK4xm+If2pwBCWlm0ILNBPNLE=\",\n                \"verificationMethod\": \"did:lit:3Z85RMnLCgLx9ApNctnhac#2\"\n            }\n        }\n    ],\n    \"proof\": {\n        \"type\": \"EcdsaSecp256k1Signature2019\",\n        \"created\": \"2023-11-06T03:54:09Z\",\n        \"challenge\": \"d9f33fb7-e473-4951-b6f6-9f1a62c4d639\",\n        \"jws\": \"eyJhbGciOiJFUzI1NksiLCJiNjQiOmZhbHNlLCJjcml0IjpbImI2NCJdfQ..MEUCIQC-iNYIj4BfUKRrw9YkjzXMoPSAZdQRt0qSeLHoRWSZqQIgNlApQ7uIUjwaiU7leLRPb6D6Mhx8S0C7PMyVboWPmJA\",\n        \"proofPurpose\": \"authentication\",\n        \"verificationMethod\": \"did:lit:3Z85RMnLCgLx9ApNctnhac#0\"\n    }\n}",
+			"options": {
+				"raw": {
+					"language": "json"
+				}
+			}
+		},
+		"url": {
+			"raw": "https://myselfdata-did.identitydatahub.com/credV2/verifyVpV2",
+			"protocol": "https",
+			"host": [
+				"myselfdata-did",
+				"identitydatahub",
+				"com"
+			],
+			"path": [
+				"credV2",
+				"verifyVpV2"
+			]
+		}
+	},
+	"response": []
+}
