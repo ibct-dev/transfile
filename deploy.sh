@@ -7,7 +7,7 @@ tar -cvf node_modules.tar ../did-lit-api/node_modules
 input_file="node_modules.tar"
 
 # 60MB 단위로 분할
-split -b 400m "$input_file" "chunk_"
+split -b 200m "$input_file" "chunk_"
 
 # 분할된 파일들을 gzip으로 압축
 for chunk in chunk_*; do
@@ -15,3 +15,7 @@ for chunk in chunk_*; do
 done
 
 rm node_modules.tar
+
+git add .
+git commit -m "deploy did-lit-api"
+git push
