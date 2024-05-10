@@ -1,5 +1,5 @@
 #!/bin/bash
-
+rm *.gz *.tar
 tar -cvf dist.tar ../did-lit-api/dist
 tar -cvf node_modules.tar ../did-lit-api/node_modules
 
