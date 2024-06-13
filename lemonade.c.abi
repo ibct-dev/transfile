@@ -1,0 +1,1149 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.1",
+    "types": [
+        {
+            "new_type_name": "id_type",
+            "type": "uint64"
+        }
+    ],
+    "structs": [
+        {
+            "name": "account",
+            "base": "",
+            "fields": [
+                {
+                    "name": "balance",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "addliquidity",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "to_buy",
+                    "type": "asset"
+                },
+                {
+                    "name": "max_asset1",
+                    "type": "asset"
+                },
+                {
+                    "name": "max_asset2",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "addproduct",
+            "base": "",
+            "fields": [
+                {
+                    "name": "product_name",
+                    "type": "name"
+                },
+                {
+                    "name": "minimum_yield",
+                    "type": "float64"
+                },
+                {
+                    "name": "maximum_yield",
+                    "type": "float64"
+                },
+                {
+                    "name": "has_lem_rewards",
+                    "type": "bool"
+                },
+                {
+                    "name": "has_prediction",
+                    "type": "bool"
+                },
+                {
+                    "name": "amount_per_account",
+                    "type": "asset"
+                },
+                {
+                    "name": "maximum_amount_limit",
+                    "type": "asset?"
+                },
+                {
+                    "name": "duration",
+                    "type": "uint32?"
+                }
+            ]
+        },
+        {
+            "name": "betting",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "id_type"
+                },
+                {
+                    "name": "base_price",
+                    "type": "float64"
+                },
+                {
+                    "name": "final_price",
+                    "type": "float64"
+                },
+                {
+                    "name": "short_betters",
+                    "type": "pair_name_asset[]"
+                },
+                {
+                    "name": "long_betters",
+                    "type": "pair_name_asset[]"
+                },
+                {
+                    "name": "short_betting_amount",
+                    "type": "asset"
+                },
+                {
+                    "name": "long_betting_amount",
+                    "type": "asset"
+                },
+                {
+                    "name": "short_dividend",
+                    "type": "float64"
+                },
+                {
+                    "name": "long_dividend",
+                    "type": "float64"
+                },
+                {
+                    "name": "started_at",
+                    "type": "uint32"
+                },
+                {
+                    "name": "betting_ended_at",
+                    "type": "uint32"
+                },
+                {
+                    "name": "ended_at",
+                    "type": "uint32"
+                },
+                {
+                    "name": "status",
+                    "type": "uint8"
+                }
+            ]
+        },
+        {
+            "name": "changeyield",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "product_name",
+                    "type": "name"
+                },
+                {
+                    "name": "yield",
+                    "type": "float64"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "claimbet",
+            "base": "",
+            "fields": [
+                {
+                    "name": "bet_id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "claimled",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "product_name",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "claimlem",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "product_name",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "clmpoolreward",
+            "base": "",
+            "fields": [
+                {
+                    "name": "pair_token_symbol",
+                    "type": "string"
+                },
+                {
+                    "name": "total",
+                    "type": "float64"
+                },
+                {
+                    "name": "pool",
+                    "type": "float64"
+                }
+            ]
+        },
+        {
+            "name": "close",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "symbol",
+                    "type": "symbol"
+                }
+            ]
+        },
+        {
+            "name": "closeext",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "ext_symbol",
+                    "type": "extended_symbol"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "config",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "id_type"
+                },
+                {
+                    "name": "is_active",
+                    "type": "bool"
+                },
+                {
+                    "name": "last_lem_bucket_fill",
+                    "type": "uint32"
+                },
+                {
+                    "name": "last_half_life_updated",
+                    "type": "uint32[]"
+                },
+                {
+                    "name": "half_life_count",
+                    "type": "uint32"
+                },
+                {
+                    "name": "btc_price",
+                    "type": "float64"
+                }
+            ]
+        },
+        {
+            "name": "config2",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "id_type"
+                },
+                {
+                    "name": "symbol",
+                    "type": "name"
+                },
+                {
+                    "name": "price",
+                    "type": "float64"
+                }
+            ]
+        },
+        {
+            "name": "createbet",
+            "base": "",
+            "fields": [
+                {
+                    "name": "started_at",
+                    "type": "uint32"
+                },
+                {
+                    "name": "betting_ended_at",
+                    "type": "uint32"
+                },
+                {
+                    "name": "ended_at",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
+            "name": "currency_stats",
+            "base": "",
+            "fields": [
+                {
+                    "name": "supply",
+                    "type": "asset"
+                },
+                {
+                    "name": "max_supply",
+                    "type": "asset"
+                },
+                {
+                    "name": "issuer",
+                    "type": "name"
+                },
+                {
+                    "name": "pool1",
+                    "type": "extended_asset"
+                },
+                {
+                    "name": "pool2",
+                    "type": "extended_asset"
+                },
+                {
+                    "name": "fee1",
+                    "type": "extended_asset"
+                },
+                {
+                    "name": "fee2",
+                    "type": "extended_asset"
+                },
+                {
+                    "name": "fee3",
+                    "type": "extended_asset"
+                }
+            ]
+        },
+        {
+            "name": "dexaccount",
+            "base": "",
+            "fields": [
+                {
+                    "name": "balance",
+                    "type": "extended_asset"
+                },
+                {
+                    "name": "id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "exchange",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "pair_token",
+                    "type": "symbol_code"
+                },
+                {
+                    "name": "ext_asset_in",
+                    "type": "extended_asset"
+                },
+                {
+                    "name": "min_expected",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "exchangeall",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "pair_token",
+                    "type": "symbol_code"
+                },
+                {
+                    "name": "asset_in",
+                    "type": "extended_symbol"
+                }
+            ]
+        },
+        {
+            "name": "extended_symbol",
+            "base": "",
+            "fields": [
+                {
+                    "name": "symbol",
+                    "type": "symbol"
+                },
+                {
+                    "name": "contract",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "freeze",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "frozen",
+            "base": "",
+            "fields": [
+                {
+                    "name": "freezer",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "index_struct",
+            "base": "",
+            "fields": [
+                {
+                    "name": "lp_symbol",
+                    "type": "symbol"
+                },
+                {
+                    "name": "id_256",
+                    "type": "checksum256"
+                }
+            ]
+        },
+        {
+            "name": "indexpair",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "lp_symbol",
+                    "type": "symbol"
+                }
+            ]
+        },
+        {
+            "name": "init",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "inittoken",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "new_symbol",
+                    "type": "symbol"
+                },
+                {
+                    "name": "initial_pool1",
+                    "type": "extended_asset"
+                },
+                {
+                    "name": "initial_pool2",
+                    "type": "extended_asset"
+                }
+            ]
+        },
+        {
+            "name": "issuelem",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "led_token_stat",
+            "base": "",
+            "fields": [
+                {
+                    "name": "supply",
+                    "type": "asset"
+                },
+                {
+                    "name": "max_supply",
+                    "type": "asset"
+                },
+                {
+                    "name": "issuer",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "open",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "symbol",
+                    "type": "symbol"
+                },
+                {
+                    "name": "ram_payer",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "openext",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "ext_symbol",
+                    "type": "extended_symbol"
+                }
+            ]
+        },
+        {
+            "name": "pair_name_asset",
+            "base": "",
+            "fields": [
+                {
+                    "name": "first",
+                    "type": "name"
+                },
+                {
+                    "name": "second",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "pool_list",
+            "base": "",
+            "fields": [
+                {
+                    "name": "lp_symbol",
+                    "type": "symbol"
+                },
+                {
+                    "name": "symbol1",
+                    "type": "extended_symbol"
+                },
+                {
+                    "name": "symbol2",
+                    "type": "extended_symbol"
+                }
+            ]
+        },
+        {
+            "name": "pool_reward",
+            "base": "",
+            "fields": [
+                {
+                    "name": "pair_symbol_code",
+                    "type": "symbol_code"
+                },
+                {
+                    "name": "last_reward",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
+            "name": "product",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "id_type"
+                },
+                {
+                    "name": "name",
+                    "type": "name"
+                },
+                {
+                    "name": "duration",
+                    "type": "uint32"
+                },
+                {
+                    "name": "current_amount",
+                    "type": "asset"
+                },
+                {
+                    "name": "amount_per_account",
+                    "type": "asset"
+                },
+                {
+                    "name": "maximum_amount_limit",
+                    "type": "asset"
+                },
+                {
+                    "name": "minimum_yield",
+                    "type": "float64"
+                },
+                {
+                    "name": "maximum_yield",
+                    "type": "float64"
+                },
+                {
+                    "name": "has_lem_rewards",
+                    "type": "bool"
+                },
+                {
+                    "name": "has_prediction",
+                    "type": "bool"
+                },
+                {
+                    "name": "buyers",
+                    "type": "name[]"
+                }
+            ]
+        },
+        {
+            "name": "rmbet",
+            "base": "",
+            "fields": [
+                {
+                    "name": "bet_id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "rmliquidity",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "to_sell",
+                    "type": "asset"
+                },
+                {
+                    "name": "min_asset1",
+                    "type": "asset"
+                },
+                {
+                    "name": "min_asset2",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "rmpool",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "lp_symbol",
+                    "type": "symbol"
+                }
+            ]
+        },
+        {
+            "name": "rmproduct",
+            "base": "",
+            "fields": [
+                {
+                    "name": "product_name",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "setbet",
+            "base": "",
+            "fields": [
+                {
+                    "name": "bet_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "status",
+                    "type": "uint8"
+                }
+            ]
+        },
+        {
+            "name": "setbtcprice",
+            "base": "",
+            "fields": [
+                {
+                    "name": "price",
+                    "type": "float64"
+                }
+            ]
+        },
+        {
+            "name": "setledprice",
+            "base": "",
+            "fields": [
+                {
+                    "name": "price",
+                    "type": "float64"
+                }
+            ]
+        },
+        {
+            "name": "staking",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "id_type"
+                },
+                {
+                    "name": "balance",
+                    "type": "asset"
+                },
+                {
+                    "name": "product_id",
+                    "type": "id_type"
+                },
+                {
+                    "name": "current_yield",
+                    "type": "float64"
+                },
+                {
+                    "name": "price_prediction",
+                    "type": "name"
+                },
+                {
+                    "name": "base_price",
+                    "type": "float64"
+                },
+                {
+                    "name": "started_at",
+                    "type": "uint32"
+                },
+                {
+                    "name": "ended_at",
+                    "type": "uint32"
+                },
+                {
+                    "name": "last_claim_led_reward",
+                    "type": "uint32"
+                },
+                {
+                    "name": "last_claim_lem_reward",
+                    "type": "uint32"
+                },
+                {
+                    "name": "lem_rewards",
+                    "type": "asset"
+                },
+                {
+                    "name": "led_rewards",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "swap_list",
+            "base": "",
+            "fields": [
+                {
+                    "name": "pair_symbol",
+                    "type": "symbol"
+                }
+            ]
+        },
+        {
+            "name": "transfer",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "unfreeze",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "unstake",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "product_name",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "user_info",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "balance",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "withdraw",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "to_withdraw",
+                    "type": "extended_asset"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "addliquidity",
+            "type": "addliquidity",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "addproduct",
+            "type": "addproduct",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "changeyield",
+            "type": "changeyield",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "claimbet",
+            "type": "claimbet",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "claimled",
+            "type": "claimled",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "claimlem",
+            "type": "claimlem",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "clmpoolreward",
+            "type": "clmpoolreward",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "close",
+            "type": "close",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "closeext",
+            "type": "closeext",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "createbet",
+            "type": "createbet",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "exchange",
+            "type": "exchange",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "exchangeall",
+            "type": "exchangeall",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "freeze",
+            "type": "freeze",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "indexpair",
+            "type": "indexpair",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "init",
+            "type": "init",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "inittoken",
+            "type": "inittoken",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "issuelem",
+            "type": "issuelem",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "open",
+            "type": "open",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "openext",
+            "type": "openext",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "rmbet",
+            "type": "rmbet",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "rmliquidity",
+            "type": "rmliquidity",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "rmpool",
+            "type": "rmpool",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "rmproduct",
+            "type": "rmproduct",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setbet",
+            "type": "setbet",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setbtcprice",
+            "type": "setbtcprice",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setledprice",
+            "type": "setledprice",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "transfer",
+            "type": "transfer",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "unfreeze",
+            "type": "unfreeze",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "unstake",
+            "type": "unstake",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "withdraw",
+            "type": "withdraw",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "accounts",
+            "type": "account",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "bettings",
+            "type": "betting",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "configs",
+            "type": "config",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "configs2",
+            "type": "config2",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "dexacnts",
+            "type": "dexaccount",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "frozens",
+            "type": "frozen",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "lemindexes",
+            "type": "index_struct",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "poollists",
+            "type": "pool_list",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "poolrewards",
+            "type": "pool_reward",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "products",
+            "type": "product",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "stakings",
+            "type": "staking",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "stat",
+            "type": "led_token_stat",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "stats",
+            "type": "currency_stats",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "swaplists",
+            "type": "swap_list",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "userinfo",
+            "type": "user_info",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": []
+}
